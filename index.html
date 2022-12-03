@@ -22,6 +22,132 @@
 </head>
 
 <body>
+     <style>
+         .end{
+    background-color: #FFD369;
+  }
+  .contact0{
+            padding-top: 50px;
+            text-align: center;
+        }
+        
+        .cu{
+            font-size: 3rem;;
+            color: black;
+            font-weight: bold;
+        }
+        .content10{
+            display: flex;
+        }
+        .part1{
+            
+            width: 50%;
+        }
+        .part2{
+            
+            width: 50%;
+        }
+        .add0{
+            display: flex;
+            padding-left: 250px;
+            padding-top: 150px;
+            color: black;
+            font-size: 2rem;
+        }
+        .addcont0{
+            
+            margin-left: 250px;
+            width: 250px;
+            font-size: 1.2rem;
+            color:black;
+        }
+        .phone0{
+            padding-left: 250px;
+            padding-top: 20px;
+            color:black;
+            font-size: 2rem;
+        }
+        .phonecont0{
+            width: 190px;
+            font-size: 1.2rem;
+            margin-left: 250px;
+        }
+        .box0{
+            background-color: white;
+            margin-top: 100px;
+            margin-left: 120px;
+            margin-right: 180px;
+            margin-bottom: 50px;
+            height: 700px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        .box0:hover{
+            border: 3.5px solid darkgoldenrod;
+        }
+       .send0{
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.7rem;
+        color:darkgoldenrod;
+        text-align: center;
+       }
+  
+       .megh0{
+        font-size: 1.5rem;
+        color: black;
+       }
+       .ht0{
+        height: 30px;
+        width: 300px;
+        border-color: transparent;
+        border-bottom: 1.5px solid black;
+        font-size: 1rem;
+        
+       }
+       .ht0:hover{
+        border-bottom: 3px solid darkgoldenrod;
+       }
+       .space0{
+        height: 30px;
+       }
+       .ta0{
+        
+        height: 150px;
+        width: 300px;
+        font-size: 1rem;
+       }
+       .ta0:hover{
+        border: 3px solid darkgoldenrod;
+       }
+       .send10{
+        text-align: center; 
+        background-color: white;
+       }
+       .but0{
+        height: 35px;
+        width: 75px;
+        background-color: white;
+        font-size: 1rem;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        color: darkgoldenrod;
+        font-weight: bold;
+        border: 1.5px solid black;
+       }
+       .but0:hover{
+        background-color: darkgoldenrod;
+        color: white;
+        font-size: 1.2rem;
+        width: 95px;
+        height: 45px;
+        border: 2px solid black;
+       }
+       .link0{
+        color: black;
+        text-decoration: none;
+       }
+    </style>
     <header>
 
         <a class="anc">
@@ -34,6 +160,9 @@
                 </li>
                 <li>
                     <a href="#mid">Profile</a>
+                </li>
+                 <li>
+                    <a href="#end">Contact us</a>
                 </li>
                
             </ul>
@@ -114,6 +243,124 @@
             </div>
         </div>
     </section>
+     <section class="end">
+            <script>
+                function valid(){
+                    var name=document.myform.name.value;
+                    var num=document.myform.num.value;
+                    var mail=document.myform.mail.value;
+                    var mes=document.myform.mess.value;
+                    if(name=="" || name==null)
+                    {
+                        alert('Name not given !!!');
+                        return false;
+                    }
+                    else if(num=="" || num==null)
+                    {
+                        alert('Number not given !!!');
+                        return false;
+                    }
+                    else if(mail=="" || mail==null)
+                    {
+                        alert('Email not given !!!');
+                        return false;
+                    }
+                    else if(mess=="" || mess==null)
+                    {
+                        alert('Message not given !!!');
+                        return false;
+                    }
+                    else if(num.length < 6)
+                    {
+                        alert('Number not as per expected length !!!');
+                        return false;
+                    }
+                }
+            </script>
+         <section id="end">
+            <section class="contact0">
+                <div class="cu">
+                    CONTACT US
+                </div>
+                
+            </section>
+            <section class="content10">
+                <div class="part1">
+                    <div class="add0">
+                        <h3>ADDRESS</h3>
+                    </div>
+                    <div class="addcont0">
+                        <p>GSFC University Vigyan Bhavan,
+                            P. O. Fertilizernagar,
+                            Vadodara-391750,
+                            Gujarat, INDIA</p> 
+                    </div>
+                    <div class="phone0">
+                        <h3>PHONE</h3>
+                    </div>
+                    <div class="phonecont0">
+                        <p>+91-1234567890</p>
+                    </div>
+                    <div class="phone0">
+                        <h3>EMAIL</h3>
+                    </div>
+                    <div class="phonecont0">
+                        <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="link0">abc@gmail.com</a></p>
+                    </div>
+    
+                </div>
+                <div class="part2">
+                    <div class="box0">
+                        <h3 class="send0">Send a Message</h3>
+                        <form method="post" name="myform" onsubmit="return valid()">
+                            <div class="first0">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                <span class="megh0">Full Name</span><br>
+                                &nbsp;
+                                &nbsp;
+                                <input type="text" name="name" id="name" class="ht0">
+                            </div>
+                            <div class="space0"></div>
+                            <div class="first0">
+                                &nbsp;
+                                &nbsp;
+                                <span class="megh0">Phone Number</span><br>
+                                &nbsp;
+                                &nbsp;
+                                <input type="text" name="num" id="num" class="ht0">
+                            </div>
+                            <div class="space0"></div>
+                            <div class="first0">
+                                &nbsp;
+                                &nbsp;
+                                <span class="megh0">Email</span><br>
+                                &nbsp;
+                                &nbsp;
+                                <input type="email" name="mail" id="mail" class="ht0">
+                            </div>
+                            <div class="space0"></div>
+                            <div class="first0">
+                                &nbsp;
+                                &nbsp;
+                                <span class="megh0">Message</span><br>
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                <textarea class="ta0" name="mess" id="mess"></textarea>
+                            </div>
+                            <div class="send10">
+                                <br><br>
+                                <input type="submit" class="but0">
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+         </section>
 </body>
 
 </html>
